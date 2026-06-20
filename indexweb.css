@@ -180,77 +180,47 @@ span{
 .education h2{
     margin-bottom: 5rem;
 }
-.timeline-items{
-    max-width: 1200px;
-    margin: auto;
+.carousel {
+    margin: 110px auto;
+    width: 80%;
+    border: 5px var(--main-color);
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    
 }
-.timeline-items::before{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
-    left: calc(50% - 1px);
+.carousel::-webkit-scrollbar {
+    display: none;
 }
-.timeline-item{
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
+
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding-right: 6em;
+    margin: auto;   
 }
-.timeline-item:last-child{
-    margin-bottom: 0;
+.card:hover{
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 60px var(--main-color);
 }
-.timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
-    text-align: right;
+.video1 {
+height: 110%;
+width: 100% auto;
+margin: auto;
 }
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);   
-}
-.timeline-dot{
-    height: 21px;
-    width: 21px;
-    background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
-}
-.timeline-date{
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    margin: 6px 0 15px;
-}
-.timeline-content{
-    background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
-    padding: 30px 50px;
-    border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.timeline-content:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color);
-}
-.timeline-content h3{
-    font-size: 20px;
-    color: white;
-    margin: 0 0 10px;
-    font-weight: 500;
-}
-.timeline-content p{
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
+.card {
+    flex: 0 0 5em;
+    height: 600px;
+    padding: 7rem;
+    background: var(--bg-color);
+    font-size: 5.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    align-content: center;
+    
 }
 ::-webkit-scrollbar{
     width: 15px;
